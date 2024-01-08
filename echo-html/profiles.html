@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="shortcut icon" href="assets/images/fav.png" type="image/x-icon">
+
+    <link rel="stylesheet preload" href="assets/css/plugins/fontawesome-5.css" as="style">
+    <link rel="stylesheet preload" href="assets/css/vendor/bootstrap.min.css" as="style">
+    <link rel="stylesheet preload" href="assets/css/vendor/swiper.css" as="style">
+    <link rel="stylesheet preload" href="assets/css/vendor/metismenu.css" as="style">
+    <link rel="stylesheet preload" href="assets/css/vendor/magnific-popup.css" as="style">
+    <link rel="stylesheet preload" href="assets/css/style.css" as="style">
+    <link rel="stylesheet" href="assets/css/my-custom.css">
+</head>
+
+<body class="innerpage">
+    <!-- Start Top Header Area -->
+
+    <!-- Start Top Header Area -->
+    <x-header></x-header>
+    <!-- End Top Header Area -->
+
+    <!-- side bar for desktop -->
+    <div id="side-bar" class="side-bar header-one">
+        <div class="inner">
+            <button class="close-icon-menu"><i class="far fa-times"></i></button>
+            <!-- inner menu area desktop start -->
+            <div class="inner-main-wrapper-desk d-none d-lg-block">
+                <div class="thumbnail">
+                    <img src="assets/images/sidemenu-logo.svg" alt="echo">
+                </div>
+                <div class="inner-content">
+                    <div class="category-menu-area">
+                        <ul class="category-area">
+                            <li class="item">
+                                <div class="image-area">
+                                    <a href="#">
+                                        <img src="assets/images/category-style-1/1.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="content">
+                                    <div class="recent-post-title">
+                                        <a href="#">The incident began as an argument among.</a>
+                                        <p class="desc"></p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="image-area"><a href="#"><img src="assets/images/category-style-1/2.png" alt=""></a></div>
+                                <div class="content">
+                                    <div class="recent-post-title">
+                                        <a href="#">The incident began as an argument among.</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="newsletter-form">
+                        <div class="form-inner">
+                            <div class="content">
+                                <div class="newsletter-image">
+                                    <img src="assets/images/home-1/feature-right/news-item-1.png" alt="">
+                                </div>
+                                <h3 class="title">Get Newsletter</h3>
+                                <p class="desc">Notification products, updates</p>
+                            </div>
+                            <form action="#">
+                                <div class="input-div">
+                                    <input type="email" placeholder="Your email..." required>
+                                </div>
+                                <button type="submit" class="subscribe-btn">Subscribe Now</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- mobile menu area start -->
+        <x-headermobile></x-headermobile>
+        <!-- mobile menu area end -->
+    </div>
+    <!-- header style two End -->
+    <!-- Start Subscribe Popup Box -->
+    <div class="echo-popup-model" id="id01">
+        <div class="echo-popup-transition">
+            <div class="model-content animate-subscribe-popup">
+                <a href="javascript:void(0)" onclick="document.getElementById('id01').style.display='none'"><i class="fa-regular fa-xmark"></i></a>
+                <div class="echo-p-flexing">
+                    <div class="echo-p-img">
+                        <img src="assets/images/home-1/feature-right/news-item-1.png" alt="Echo">
+                    </div>
+                    <div class="form">
+                        <div class="echo-p-sub-heading">
+                            <p>Weekly Updates</p>
+                        </div>
+                        <div class="echo-p-sub-heading">
+                            <h3>Let's join our newsletter!</h3>
+                        </div>
+                        <form method="POST">
+                            <input type="email" required placeholder="Enter Your Email..">
+                            <button type="submit">Submit</button>
+                        </form>
+                        <div class="echo-bottom-popup">
+                            <p>Do not worry we don't spam!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Subscribe Popup Box -->
+    <!-- End Top Header Area -->
+
+    <!-- start breadcrumb area -->
+    <!-- rts breadcrumba area start -->
+    <div class="echo-breadcrumb-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- bread crumb inner wrapper -->
+                    <div class="breadcrumb-inner text-center">
+                        <div class="meta">
+                            <a href="#" class="prev">ECHO /</a>
+                            <a href="#" class="next">CONTACT US</a>
+                        </div>
+                        <h1 class="title">Profile Account</h1>
+                    </div>
+                    <!-- bread crumb inner wrapper end -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- rts breadcrumba area end -->
+    <!-- end breadcrumb area -->
+
+    <!-- Start Contact Area -->
+    <section class="echo-contact-area">
+        <div class="echo-contact-content">
+            <div class="container">
+                <div class="echo-contact-full-content">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12">
+                            <div class="echo-contact-input-field">
+                                <div class="echo-contact-title">
+                                    <h2 class="text-capitalize">Profile Account</h2>
+                                </div>
+                                <div class="echo-contact-sub-title">
+                                    <p>Ornare arcu dui vivamus arcu felis. Nunc sed id semper risus in hendrerit gravida rutrum quisque. Nullam eget felis eget nunc lobortis mattis </p>
+                                </div>
+                                <div class="echo-main-contact-form">
+                                    <div id="form-messages"></div>
+                                    <form id="auth-form" method="post" action="mailer.php">
+                                        <div class="echo-contact-input-flexing">
+                                            <div class="echo-contact-email echo-df-input">
+                                                <input readonly disabled type="email" placeholder="Email" required
+                                                id="email"
+                                                class="disabled">
+                                            </div>
+                                        </div>
+                                        <div class="echo-contact-input-flexing">
+                                            <div class="echo-contact-name echo-df-input">
+                                                <input name="name" type="text" placeholder="Name" 
+                                                required
+                                                id="name">
+                                            </div>
+                                        </div>
+                                        <div class="echo-contact-input-flexing echo-df-input">
+                                            <div class="echo-contact-number echo-df-input">
+                                                <input name="phone" type="text" placeholder="Phone" required
+                                                id="phone">
+                                            </div>                                          
+                                        </div>
+                                        <div class="echo-contact-texting-fild">
+                                            <textarea name="address" placeholder="Your Address"
+                                            id="address"></textarea>
+                                        </div>
+                                        <button type="submit" class="echo-contact-btn">Submit Now <i class="fa-regular fa-arrow-right"></i></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                            <div class="echo-info">
+                                <div class="echo-address">
+                                    <h6 class="text-capitalize">Location</h6>
+                                    <span>The Business Centre132,  New York 12401. United States</span>
+                                </div>
+                                <div class="echo-address">
+                                    <h6 class="text-capitalize">Email</h6>
+                                    <span>Info@yourmail.com</span>
+                                </div>
+                                <div class="echo-address">
+                                    <h6 class="text-capitalize">Phone</h6>
+                                    <span>(00) 123 456 789 99</span>
+                                </div>
+                                <div class="echo-map">
+                                    <iframe class="contact-map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14602.288851207937!2d90.47855065!3d23.798243149999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1663151706353!5m2!1sen!2sbd" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Contact Area -->
+
+    <!-- Start Footer Area -->
+    <!-- Start Footer Area -->
+    <x-footer></x-footer>
+    <!-- End Footer Area -->
+    <!-- End Footer Area -->
+
+    <!-- Start Scricpt Area -->
+
+    <!--scroll top button-->
+    <button class="scroll-top-btn">
+        <i class="fa-regular fa-angles-up"></i>
+    </button>
+    <!--scroll top button end-->
+
+    <div id="anywhere-home"></div>
+
+    <script src="assets/js/vendor/jquery.min.js" defer></script>
+    <script src="assets/js/plugins/audio.js" defer></script>
+    <script src="assets/js/vendor/bootstrap.min.js" defer></script>
+    <script src="assets/js/vendor/swiper.js" defer></script>
+    <script src="assets/js/vendor/metisMenu.min.js" defer></script>
+    <script src="assets/js/plugins/audio.js" defer></script>
+    <script src="assets/js/plugins/magnific-popup.js" defer></script>
+    <script src="assets/js/plugins/contact-form.js" defer></script>
+    <script src="assets/js/plugins/resize-sensor.min.js" defer></script>
+    <script src="assets/js/plugins/theia-sticky-sidebar.min.js" defer></script>
+
+    <script src="assets/component/header-mobile.js"></script>
+    <script src="./assets/component/header.js"></script>    
+    <script src="./assets/component/footer.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.10/plugin/relativeTime.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.10/locale/vi.js"></script>
+    <!-- main js file -->
+    <script src="assets/js/main.js" defer></script>
+    <script src="js/general.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/profile.js"></script>
+    <!-- End Footer Area -->
+
+
+</body>
+
+</html>

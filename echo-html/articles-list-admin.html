@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - List Articles</title>
+    <link rel="shortcut icon" href="assets/images/fav.png" type="image/x-icon">
+
+    <link rel="stylesheet preload" href="assets/css/plugins/fontawesome-5.css" as="style">
+    <link rel="stylesheet preload" href="assets/css/vendor/bootstrap.min.css" as="style">
+    <link rel="stylesheet preload" href="assets/css/vendor/swiper.css" as="style">
+    <link rel="stylesheet preload" href="assets/css/vendor/metismenu.css" as="style">
+    <link rel="stylesheet preload" href="assets/css/vendor/magnific-popup.css" as="style">
+    <link rel="stylesheet preload" href="assets/css/style.css" as="style">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    
+    <link rel="stylesheet" href="assets/css/my-custom.css">
+</head>
+
+<body class="innerpage">
+    <!-- Start Top Header Area -->
+
+    <!-- Start Top Header Area -->
+    <x-header></x-header>
+
+    <div id="side-bar" class="side-bar header-one">
+      <div class="inner">
+          <button class="close-icon-menu"><i class="far fa-times"></i></button>
+          <!-- inner menu area desktop start -->
+          <div class="inner-main-wrapper-desk d-none d-lg-block">
+              <div class="thumbnail">
+                  <img src="assets/images/sidemenu-logo.svg" alt="echo">
+              </div>
+              <div class="inner-content">
+                  <div class="category-menu-area">
+                      <ul class="category-area">
+                          <li class="item">
+                              <div class="image-area">
+                                  <a href="#">
+                                      <img src="assets/images/category-style-1/1.png" alt="">
+                                  </a>
+                              </div>
+                              <div class="content">
+                                  <div class="recent-post-title">
+                                      <a href="#">The incident began as an argument among.</a>
+                                  </div>
+                                  <p class="desc"><a href="#"><i class="fa-light fa-user"></i>Asley Graham</a></p>
+                              </div>
+                          </li>
+                          <li class="item">
+                              <div class="image-area"><a href="#"><img src="assets/images/category-style-1/2.png" alt=""></a></div>
+                              <div class="content">
+                                  <div class="recent-post-title">
+                                      <a href="#">The incident began as an argument among.</a>
+                                  </div>
+                                  <p class="desc"><a href="#"><i class="fa-light fa-user"></i>Emily Dicingson</a></p>
+                              </div>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="newsletter-form">
+                      <div class="form-inner">
+                          <div class="content">
+                              <div class="newsletter-image">
+                                  <img src="assets/images/home-1/feature-right/news-item-1.png" alt="">
+                              </div>
+                              <h3 class="title">Get Newsletter</h3>
+                              <p class="desc">Notification products, updates</p>
+                          </div>
+                          <form action="#">
+                              <div class="input-div">
+                                  <input type="email" placeholder="Your email..." required>
+                              </div>
+                              <button type="submit" class="subscribe-btn">Subscribe Now</button>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- mobile menu area start -->
+      <x-headermobile></x-headermobile>
+      <!-- mobile menu area end -->
+    </div>
+
+    <main id="main">
+      <section id="contact" class="contact mb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 text-center mb-2">
+              <h1 class="page-title">Admin - List Articles</h1>
+            </div>
+          </div>
+
+          <div class="form mt-5">
+            <div class="row">
+              <div class="col-12 mx-auto">
+                <div id="formMessage"></div>
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th>Id</th>
+                      <th>Thumb</th>
+                      <th>Title</th>
+                      <th>Category</th>
+                      <th>Hiển thị</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody id="articles">
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <!-- End Contact Form -->
+        </div>
+      </section>
+    </main>
+    <x-footer></x-footer>
+    <!-- End Footer Area -->
+    <!-- End Footer Area -->
+
+    <!-- Start Scricpt Area -->
+
+    <!--scroll top button-->
+    <button class="scroll-top-btn">
+        <i class="fa-regular fa-angles-up"></i>
+    </button>
+    <!--scroll top button end-->
+
+    <div id="anywhere-home"></div>
+
+    <script src="assets/js/vendor/jquery.min.js" defer></script>
+    <script src="assets/js/plugins/audio.js" defer></script>
+    <script src="assets/js/vendor/bootstrap.min.js" defer></script>
+    <script src="assets/js/vendor/swiper.js" defer></script>
+    <script src="assets/js/vendor/metisMenu.min.js" defer></script>
+    <script src="assets/js/plugins/audio.js" defer></script>
+    <script src="assets/js/plugins/magnific-popup.js" defer></script>
+    <script src="assets/js/plugins/contact-form.js" defer></script>
+    <script src="assets/js/plugins/resize-sensor.min.js" defer></script>
+    <script src="assets/js/plugins/theia-sticky-sidebar.min.js" defer></script>\
+    <script src="assets/component/header-mobile.js"></script>
+    <script src="./assets/component/header.js"></script>    
+    <script src="./assets/component/footer.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.10/plugin/relativeTime.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.10/locale/vi.js"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/40.1.0/classic/ckeditor.js"></script>
+    <!-- main js file -->
+    <script src="assets/js/main.js" defer></script>
+    <script src="js/general.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/admin-list-articles.js"></script>
+    <!-- End Footer Area -->
+
+
+</body>
+
+</html>
